@@ -16,7 +16,8 @@ const FormData = () => {
   };
   return (
     <div className="bg-gray-300 flex justify-center min-h-screen">
-      <div className="flex items-center">
+      <div className="flex flex-col items-center">
+      <h1 className="bg-blue-500 text-3xl p-2 mt-[150px] mb-5 rounded-lg shadow-lg text-white w-full text-center">แบบฟอร์มคำนวณภาษีเงินได้</h1>
         <div className="bg-white shadow-lg p-6 rounded-lg text-2xl">
             <h1 className="text-center font-bold text-3xl bg-blue-500 text-white rounded-md p-2">กรุณากรอกข้อมูล</h1>
               <form onSubmit={submitForm} className="grid grid-cols-1 md:grid-cols-2 gap-1 mt-4">

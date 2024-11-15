@@ -19,11 +19,12 @@ const Results = () => {
 
   
   return ( 
-    <div className="bg-gray-300 flex justify-center min-h-screen items-center">
-        <div className="flex flex-col ">
+    <div className="bg-gray-300 flex justify-center min-h-screen">
+      <div className="flex flex-col">
+            <h1 className="bg-blue-500 text-3xl p-2 mt-[150px] mb-5 rounded-lg shadow-lg text-white w-full text-center">แบบฟอร์มคำนวณภาษีเงินได้</h1>
             <div className="bg-white shadow-lg rounded-lg p-6">
                 
-                <h1 className="bg-blue-500 text-white rounded-md p-2 text-2xl text-center font-bold">คำนวนภาษี</h1>
+                <h1 className="bg-blue-500 text-white rounded-md p-2 text-2xl text-center font-bold">คำนวณภาษี</h1>
                 <div className="grid grid-row gap-2 text-xl pt-5">
                     <p className="bg-blue-500 text-white rounded-md p-2 flex gap-1">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-dollar-sign"><circle cx="12" cy="12" r="10"/><path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"/><path d="M12 18V6"/></svg>
@@ -53,7 +54,7 @@ const Results = () => {
 
                 
             </div>
-            <NavLink to="/"><button className="bg-blue-500 w-full p-2 mt-2 rounded-lg text-white hover:bg-blue-700 shadow-lg">ย้อนกลับ</button></NavLink>
+            <NavLink to="/"><button className="bg-blue-500 w-full p-2 mt-5 rounded-lg text-white hover:bg-blue-700 shadow-lg">ย้อนกลับ</button></NavLink>
         </div>
     </div>
   );
