@@ -7,7 +7,7 @@ const Results = () => {
   let salaryOfYear = formData.salary * 12 + parseInt(formData.bonus);
   let expenses = salaryOfYear * 0.5 <=100000 ? salaryOfYear * 0.5:100000 ;
   let child = parseInt(formData.child)*30000 <=60000 ? parseInt(formData.child) * 30000:60000;
-  let social = parseInt(formData.social) <= 30000 ? parseInt(formData.social) : 30000;
+  let social = parseInt(formData.social) * 12 <= 30000 ? parseInt(formData.social) * 12 : 30000;
   let lifeinsurance = parseInt(formData.lifeinsurance) <=100000 ? parseInt(formData.lifeinsurance) : 100000;
   let deduction = 60000 + child + social + lifeinsurance;
   let income = salaryOfYear - expenses - deduction 
